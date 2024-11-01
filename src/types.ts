@@ -22,3 +22,8 @@ export type ShapesObject = {
     shapes: BlockShape[]
   }
 }
+
+export type BlockVariant = {
+  block: BlockNoEmpty
+  shapeIndex: number
+}

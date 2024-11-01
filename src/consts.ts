@@ -8,18 +8,19 @@ export const shapes: ShapesObject = {
   [Block.I]: {
     shapes: [
       [
-        [Block.EMPTY, Block.EMPTY, Block.EMPTY, Block.EMPTY],
+        // [Block.EMPTY, Block.EMPTY, Block.EMPTY, Block.EMPTY],
         [Block.I, Block.I, Block.I, Block.I],
-        [Block.EMPTY, Block.EMPTY, Block.EMPTY, Block.EMPTY],
-        [Block.EMPTY, Block.EMPTY, Block.EMPTY, Block.EMPTY],
+        // [Block.EMPTY, Block.EMPTY, Block.EMPTY, Block.EMPTY],
+        // [Block.EMPTY, Block.EMPTY, Block.EMPTY, Block.EMPTY],
       ],
+      [[Block.I], [Block.I], [Block.I], [Block.I]],
 
-      [
-        [Block.EMPTY, Block.I, Block.EMPTY, Block.EMPTY],
-        [Block.EMPTY, Block.I, Block.EMPTY, Block.EMPTY],
-        [Block.EMPTY, Block.I, Block.EMPTY, Block.EMPTY],
-        [Block.EMPTY, Block.I, Block.EMPTY, Block.EMPTY],
-      ],
+      // [
+      //   [Block.EMPTY, Block.I, Block.EMPTY, Block.EMPTY],
+      //   [Block.EMPTY, Block.I, Block.EMPTY, Block.EMPTY],
+      //   [Block.EMPTY, Block.I, Block.EMPTY, Block.EMPTY],
+      //   [Block.EMPTY, Block.I, Block.EMPTY, Block.EMPTY],
+      // ],
     ],
   },
   [Block.J]: {
@@ -31,9 +32,9 @@ export const shapes: ShapesObject = {
       ],
 
       [
-        [Block.EMPTY, Block.J, Block.J],
-        [Block.EMPTY, Block.J, Block.EMPTY],
-        [Block.EMPTY, Block.J, Block.EMPTY],
+        [Block.J, Block.J],
+        [Block.J, Block.EMPTY],
+        [Block.J, Block.EMPTY],
       ],
 
       [
@@ -141,4 +142,4 @@ export const shapes: ShapesObject = {
       ],
     ],
   },
-}
+} as const
