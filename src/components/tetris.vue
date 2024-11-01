@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { Block, BlockVariant } from '../types'
+import { getRandomBlock } from '../utils/get-random-block'
 import Board from './board.vue'
 import Button from './button.vue'
 import Score from './score.vue'
 import UpcomingBlocks from './upcoming-blocks.vue'
 
 const upcomingBlocks: BlockVariant[] = [
+  getRandomBlock(),
   {
     block: Block.J,
     shapeIndex: 1,
