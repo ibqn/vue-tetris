@@ -10,3 +10,15 @@ export const Block = {
 } as const
 
 export type Block = (typeof Block)[keyof typeof Block]
+
+export type BlockNoEmpty = Exclude<Block, typeof Block.EMPTY>
+
+export type BoardShape = Block[]
+
+export type BlockShape = Block[][]
+
+export type ShapesObject = {
+  [key in BlockNoEmpty]: {
+    shapes: BlockShape[]
+  }
+}
