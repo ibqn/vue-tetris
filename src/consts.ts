@@ -6,29 +6,13 @@ export const BOARD_SIZE = BOARD_WIDTH * BOARD_HEIGHT
 
 export const shapes: ShapesObject = {
   [Block.I]: {
-    shapes: [
-      [
-        // [Block.EMPTY, Block.EMPTY, Block.EMPTY, Block.EMPTY],
-        [Block.I, Block.I, Block.I, Block.I],
-        // [Block.EMPTY, Block.EMPTY, Block.EMPTY, Block.EMPTY],
-        // [Block.EMPTY, Block.EMPTY, Block.EMPTY, Block.EMPTY],
-      ],
-      [[Block.I], [Block.I], [Block.I], [Block.I]],
-
-      // [
-      //   [Block.EMPTY, Block.I, Block.EMPTY, Block.EMPTY],
-      //   [Block.EMPTY, Block.I, Block.EMPTY, Block.EMPTY],
-      //   [Block.EMPTY, Block.I, Block.EMPTY, Block.EMPTY],
-      //   [Block.EMPTY, Block.I, Block.EMPTY, Block.EMPTY],
-      // ],
-    ],
+    shapes: [[[Block.I, Block.I, Block.I, Block.I]], [[Block.I], [Block.I], [Block.I], [Block.I]]],
   },
   [Block.J]: {
     shapes: [
       [
         [Block.J, Block.EMPTY, Block.EMPTY],
         [Block.J, Block.J, Block.J],
-        [Block.EMPTY, Block.EMPTY, Block.EMPTY],
       ],
 
       [
@@ -38,15 +22,14 @@ export const shapes: ShapesObject = {
       ],
 
       [
-        [Block.EMPTY, Block.EMPTY, Block.EMPTY],
         [Block.J, Block.J, Block.J],
         [Block.EMPTY, Block.EMPTY, Block.J],
       ],
 
       [
-        [Block.EMPTY, Block.J, Block.EMPTY],
-        [Block.EMPTY, Block.J, Block.EMPTY],
-        [Block.J, Block.J, Block.EMPTY],
+        [Block.EMPTY, Block.J],
+        [Block.EMPTY, Block.J],
+        [Block.J, Block.J],
       ],
     ],
   },
@@ -55,25 +38,23 @@ export const shapes: ShapesObject = {
       [
         [Block.EMPTY, Block.EMPTY, Block.L],
         [Block.L, Block.L, Block.L],
-        [Block.EMPTY, Block.EMPTY, Block.EMPTY],
       ],
 
       [
-        [Block.EMPTY, Block.L, Block.EMPTY],
-        [Block.EMPTY, Block.L, Block.EMPTY],
-        [Block.EMPTY, Block.L, Block.L],
+        [Block.L, Block.EMPTY],
+        [Block.L, Block.EMPTY],
+        [Block.L, Block.L],
       ],
 
       [
-        [Block.EMPTY, Block.EMPTY, Block.EMPTY],
         [Block.L, Block.L, Block.L],
         [Block.L, Block.EMPTY, Block.EMPTY],
       ],
 
       [
-        [Block.L, Block.L, Block.EMPTY],
-        [Block.EMPTY, Block.L, Block.EMPTY],
-        [Block.EMPTY, Block.L, Block.EMPTY],
+        [Block.L, Block.L],
+        [Block.EMPTY, Block.L],
+        [Block.EMPTY, Block.L],
       ],
     ],
   },
@@ -90,13 +71,12 @@ export const shapes: ShapesObject = {
       [
         [Block.EMPTY, Block.S, Block.S],
         [Block.S, Block.S, Block.EMPTY],
-        [Block.EMPTY, Block.EMPTY, Block.EMPTY],
       ],
 
       [
-        [Block.EMPTY, Block.S, Block.EMPTY],
-        [Block.EMPTY, Block.S, Block.S],
-        [Block.EMPTY, Block.EMPTY, Block.S],
+        [Block.S, Block.EMPTY],
+        [Block.S, Block.S],
+        [Block.EMPTY, Block.S],
       ],
     ],
   },
@@ -105,25 +85,23 @@ export const shapes: ShapesObject = {
       [
         [Block.EMPTY, Block.T, Block.EMPTY],
         [Block.T, Block.T, Block.T],
-        [Block.EMPTY, Block.EMPTY, Block.EMPTY],
       ],
 
       [
-        [Block.EMPTY, Block.T, Block.EMPTY],
-        [Block.EMPTY, Block.T, Block.T],
-        [Block.EMPTY, Block.T, Block.EMPTY],
+        [Block.T, Block.EMPTY],
+        [Block.T, Block.T],
+        [Block.T, Block.EMPTY],
       ],
 
       [
-        [Block.EMPTY, Block.EMPTY, Block.EMPTY],
         [Block.T, Block.T, Block.T],
         [Block.EMPTY, Block.T, Block.EMPTY],
       ],
 
       [
-        [Block.EMPTY, Block.T, Block.EMPTY],
-        [Block.T, Block.T, Block.EMPTY],
-        [Block.EMPTY, Block.T, Block.EMPTY],
+        [Block.EMPTY, Block.T],
+        [Block.T, Block.T],
+        [Block.EMPTY, Block.T],
       ],
     ],
   },
@@ -132,13 +110,12 @@ export const shapes: ShapesObject = {
       [
         [Block.Z, Block.Z, Block.EMPTY],
         [Block.EMPTY, Block.Z, Block.Z],
-        [Block.EMPTY, Block.EMPTY, Block.EMPTY],
       ],
 
       [
-        [Block.EMPTY, Block.EMPTY, Block.Z],
-        [Block.EMPTY, Block.Z, Block.Z],
-        [Block.EMPTY, Block.Z, Block.EMPTY],
+        [Block.EMPTY, Block.Z],
+        [Block.Z, Block.Z],
+        [Block.Z, Block.EMPTY],
       ],
     ],
   },

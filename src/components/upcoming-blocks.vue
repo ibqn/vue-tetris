@@ -13,7 +13,7 @@ const nextBlockshape = getShape(nextBlockVariant)
 </script>
 
 <template>
-  <div class="flex h-44 w-36 flex-col items-center gap-4 border bg-black/70 p-4 shadow-glow">
+  <div class="flex h-48 w-36 flex-col items-center gap-4 border bg-black/70 p-4 shadow-glow">
     <div class="uppercase text-white">next</div>
 
     <div class="flex flex-col gap-px">
