@@ -11,7 +11,7 @@ board.value[191] = Block.O
 </script>
 
 <template>
-  <div class="shadow-glow grid grid-cols-10 gap-px border bg-black/70">
+  <div class="grid grid-cols-10 gap-px border bg-black/70 p-px shadow-glow">
     <Cell v-for="cell in board" :cell />
   </div>
 </template>

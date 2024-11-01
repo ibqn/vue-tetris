@@ -11,7 +11,7 @@ const { cell } = defineProps<Props>()
 
 <template>
   <div
-    class="size-7 bg-transparent"
+    class="size-7"
     :class="
       cn(
         Block.EMPTY === cell && 'bg-transparent',
