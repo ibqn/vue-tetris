@@ -9,7 +9,7 @@ type Props = {
 
 const { upcomingBlocks } = defineProps<Props>()
 const [nextBlockVariant] = upcomingBlocks
-const nextBlockshape = getShape(nextBlockVariant)
+const nextBlockShape = getShape(nextBlockVariant)
 </script>
 
 <template>
@@ -17,7 +17,7 @@ const nextBlockshape = getShape(nextBlockVariant)
     <div class="uppercase text-white">next</div>
 
     <div class="flex flex-col gap-px">
-      <div v-for="row in nextBlockshape" class="flex flex-row gap-px">
+      <div v-for="row in nextBlockShape" class="flex flex-row gap-px">
         <Cell v-for="cell in row" :cell="cell" />
       </div>
     </div>
