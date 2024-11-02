@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { BlockVariant } from '../types'
 import { getShape } from '../utils/get-shape'
 import Cell from './cell.vue'
@@ -8,8 +9,11 @@ type Props = {
 }
 
 const { upcomingBlocks } = defineProps<Props>()
-const [nextBlockVariant] = upcomingBlocks
-const nextBlockShape = getShape(nextBlockVariant)
+
+const nextBlockShape = computed(() => {
+  const [nextBlockVariant] = upcomingBlocks
+  return getShape(nextBlockVariant)
+})
 </script>
 
 <template>
